@@ -13,7 +13,6 @@ hs_err_pid*
 
 #tools
 .idea
-.gradle
 
 # Build folders
 target
