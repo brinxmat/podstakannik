@@ -58,6 +58,10 @@ public final class App {
         setUpApp();
     }
 
+    private void join() throws InterruptedException {
+        jettyServer.join();
+    }
+
     private void setUpApp() throws Exception {
         jettyServer = new Server(port);
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
@@ -83,7 +87,7 @@ public final class App {
         LOG.info("App started on port: " + port);
     }
 
-    private void stop() throws Exception {
+    void stop() throws Exception {
         LOG.info("Stopping App on port: " + port);
         try {
             jettyServer.stop();
