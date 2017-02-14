@@ -3,7 +3,6 @@ package no.greenall.podstakannik;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
-import com.sun.javafx.fxml.builder.URLBuilder;
 import no.greenall.podstakannik.no.greenall.podstakannik.testUtils.PortSelector;
 import org.apache.http.client.utils.URIBuilder;
 import org.junit.AfterClass;
@@ -13,7 +12,6 @@ import org.junit.Test;
 import javax.ws.rs.core.Response;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.net.URL;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
